@@ -1,0 +1,304 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+ul[class] {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: normal;
+    font-size: 34px;
+    font-weight: 300;
+    line-height: 1.2;
+    letter-spacing: 0.6px;
+    background-color: burlywood;
+    padding-top: 10px;
+}
+
+.container {
+    max-width: 1500px;
+    width: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+
+
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.header {
+    padding: 50px 0;
+    text-align: center;
+    background-color: rgb(125, 175, 125);
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.title {
+    text-align: center;
+    color: crimson;
+    background-color: rgba(139, 118, 0, 0.3);
+    display: inline-block;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.title__link {
+    transition: background-color 0.5s;
+}
+
+.title__link:hover {
+    background-color: darkorange;
+}
+
+/* ----------- */
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav {
+    background-color: rgb(125, 175, 125);
+    border-radius: 10px;
+    padding: 15px;
+    max-width: 300px;
+    width: 100%;
+    margin-right: 15px
+}
+
+.menu__title {
+    font-size: 25px;
+    line-height: 1.2;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.menu {
+    background-color: rgba(192, 206, 64, 0.5);
+    border-radius: 10px;
+}
+
+.menu__item {
+    color: black;
+    font-size: 16px;
+    padding: 5px 15px;
+}
+
+.menu__link {
+    background-color: rgb(74, 197, 57);
+    border-radius: 5px;
+    display: block;
+    padding-left: 30px;
+    transition: background-color 0.2s, font-size 0.3s;
+}
+
+.menu__link:hover {
+    background-color: rgba(197, 78, 57, 0.3);
+    font-size: 17px;
+}
+
+.content {
+    background-color: rgba(206, 64, 159, 0.5);
+    border-radius: 10px;
+    flex: 1 1 auto;
+    padding: 50px;
+    padding-top: 20px;
+}
+
+.content__title {
+    text-transform: uppercase;
+    color: darkorchid;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.content__list {
+    min-height: 90%;
+    font-size: 16px;
+}
+
+.content__link {
+    display: block;
+    background-color: rgb(151, 131, 131);
+    border-radius: 5px;
+    padding: 5px 20px;
+    transition: background-color 0.3s, font-size 0.3s;
+}
+
+.content__link:hover {
+    background-color: rgba(209, 15, 15, 0.5);
+    font-size: 17px;
+}
+
+.content__item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.foto {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+
+
+
+/* JSON */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.card {
+    width: 400px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    padding: 25px;
+    margin-top: 25px;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, .2);
+    border-radius: 4px;
+}
+
+img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.name {
+    font-size: 26px;
+    text-align: center;
+}
+
+.sex {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.sex img {
+    width: 35px;
+    height: 35px;
+}
+
+.age {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+button {
+    width: 300px;
+    height: 50px;
+    border: none;
+    background-color: orange;
+    border-radius: 4px;
+    font-size: 22px;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, .2);
+    margin: 0 auto;
+    cursor: pointer;
+
+}
+
+form {
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 300px;
+    height: 50px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border: none;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, .2);
+    font-size: 18px;
+    padding: 0 15px;
+    outline: none;
+}
+
+/* JSON */
+
+.show-info {
+    width: 1200px;
+    background-color: aqua;
+    padding-left: 50px;
+}
+
+.show-info p {
+    margin-bottom: 3px;
+    background-color: bisque;
+    padding: 0 15px;
+}
+
+.show-info__card {
+    display: grid;
+    grid-template-columns: 50px 100px 300px auto;
+    gap: 10px 5px;
+    margin-bottom: 5px;
+}
+
+.show-info__card p {
+    background-color: cadetblue;
+    text-align: center;
+    padding: 5px;
+    font-size: 1rem;
+}
