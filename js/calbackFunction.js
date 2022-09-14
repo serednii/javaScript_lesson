@@ -10,14 +10,14 @@
 
 // myFync(out);
 
-function getTitle(callBack, callBack1) {
+function getTitle(callBack) {
   fetch('http://localhost:3000/people')
     .then((response) => {
       return response.json();
     })
     .then((data) => {
       callBack(data);
-      callBack1(data);
+
     });
 }
 
@@ -29,7 +29,6 @@ function showTitle(obj) {
 
 function showBody(obj) {
 
-
   obj.forEach(e => {
     if (e.title) {
       // let p = `<p class="show-info__user-id">${e.title}</p>`
@@ -39,4 +38,21 @@ function showBody(obj) {
   });
 }
 
-getTitle(showTitle, showBody)
+getTitle(showTitle);
+
+
+//----------------------------------------
+function m(cal, cal1) {
+  cal();
+  cal1();
+}
+
+function calla() {
+  console.log('calla');
+}
+
+function calla1() {
+  console.log('calla1');
+}
+
+m(calla, calla1);

@@ -5,20 +5,7 @@
 //     console.log(countries)
 // })
 
-function m(cal, cal1) {
-    cal();
-    cal1();
-}
 
-function calla() {
-    console.log('calla');
-}
-
-function calla1() {
-    console.log('calla1');
-}
-
-m(calla, calla1);
 
 
 function test(x) {
